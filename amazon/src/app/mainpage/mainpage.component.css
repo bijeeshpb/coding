@@ -1,0 +1,20 @@
+#i{
+    position: absolute;
+    left:0px;
+    top: 0px;
+    z-index:-1;
+    width: 100%;
+    
+}
+
+
+
+#display{
+    position: fixed;
+    top:0;
+    width: 100%;
+    box-shadow:0 2px 5px rba(0,0,0,0.2)
+}
+#anim:hover{
+    transform: rotate(30deg);
+}

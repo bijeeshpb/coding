@@ -1,0 +1,66 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12" align="center"><div id="select"class="col-sm-2  " style="color: azure; width: fit-content;"><a><img class="mt-4" src="\assets\img\amazon.png" style="width:100px;"><span class="mt-4"style="font-size:medium; color:black;">.in</span></a></div></div>
+    </div>
+    <div class="row " align="center">
+  <div class="m-auto col-sm-4 rounded border" style="height:400px;">
+    <h1 class="mt-4 mx-4 " align="left" style="font-family: sans-serif;">Sign in</h1>
+    <form [formGroup]="loginform" (ngSubmit)="onsubmit(loginform)" >
+        <div class="form-group mx-4" align="left">
+          <label for="exampleFormControlInput1" style="font-weight: bold;">Email address or mobile phone number</label>
+          <input type="text" id="login" class="form-control"  placeholder="" formControlName="login">
+         <div *ngIf="loginform.get('login')?.hasError('required')" class="text-danger">
+          this field is required
+         </div>
+         <div *ngIf="loginform.get('login')?.hasError('emailOrPhone')" class="text-danger">
+          please enter the a valid email or phone number
+         </div>
+        
+        
+          <input type="submit" class="btn btn-warning btn-md  mt-3" style="width:350px;" >
+        </div>
+        </form>
+        <div class="col-sm mt-4 mx-2">by continuing,you agree to Amazon's <a href="#">Conditions of Use</a> and<a href="#">Privacy Notice</a> </div>
+        <div   class=" col-sm btn-group dropleft " align="left" >
+          <button type="button" class="btn btn-white dropdown-toggle border-0" data-bs-toggle="dropdown" aria-haspopup="true" >
+           Need ?
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">get help</a></li>
+            <li><a class="dropdown-item" href="#">security</a></li>
+            <li><a class="dropdown-item" href="#">extra</a></li>
+          </ul>
+        </div>
+        <hr>
+    <div class="col-sm mx-2 " align="left">
+      <p style="font-weight: 500;" >Buying for work?<br>
+        <a href="#" class="" style="text-decoration: none;">Shop on Amazon Business</a>
+      </p>
+
+    </div>
+      </div>
+  </div>
+  <div class=" m-auto col-sm-4 rounded  mt-4">
+    <div class="row">
+      <div class="col-sm-4"><hr></div>
+      <div class="col-sm-4">New to Amazon</div>
+      <div class="col-sm-4"><hr></div>
+    </div>
+    <button type="button" class="btn btn-white btn-md border border-1  mt-3 mb-4" style="width:415px; font-weight: 500;">Create Your  Amazon Account</button>
+  
+  </div>
+  <hr id="hr">
+  <div class=" m-auto col-sm-4 rounded  mt-4">
+    <div class="row">
+      <div class="col-sm-4"><a href="#" style="text-decoration: none; font-size: small;">condition of use</a></div>
+      <div class="col-sm-4"><a href="#" style="text-decoration: none; font-size: small;">Privacy Notice</a></div>
+      <div class="col-sm-4"><a href="#" style="text-decoration: none; font-size: small;">Help</a></div>
+    </div>
+    <div class=" m-auto col-sm-9 rounded   mt-4">
+      <div class="row">
+        <div class="col-sm-12">
+          <p style=" font-size: small;">&#169; 1996-2024,Amazon,Inc.or its affliates</p>
+        </div>
+      </div>
+</div>
+

@@ -1,0 +1,81 @@
+#side:hover{
+    background-color: antiquewhite;
+   
+}
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+.home,
+.html,
+.angular,
+.js,
+.about-us,
+.contact {
+    padding: 1rem 0;
+}
+
+.navbar-links,
+.navbar-search {
+    display: flex;
+    gap: 2rem;
+}
+
+.html,
+.js,
+.html-js-link {
+    position: relative;
+}
+
+.html:hover .html-chevron,
+.js:hover .js-chevron {
+    transform: rotate(-180deg);
+}
+
+.html-js-link:hover i {
+    transform: rotate(-90deg);
+}
+
+.html-sub-menu,
+.js-sub-menu,
+.html-js-sub-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.45rem;
+    left: -5%;
+    background-color: hsl(120, 100%, 20%);
+    width: 110%;
+}
+
+.html-sub-menu li,
+.js-sub-menu li,
+.html-js-sub-menu li {
+    padding: 0.75rem;
+}
+
+.html:hover .html-sub-menu,
+.js:hover .js-sub-menu {
+    display: flex;
+}
+
+.html-sub-menu:hover .html-sub-menu {
+    display: flex;
+}
+
+.html-js-sub-menu {
+    top: 5rem;
+    left: 9rem;
+}
+
+.html-sub-menu li:nth-child(3):hover .html-js-sub-menu {
+    display: flex;
+}
+
+.html-sub-menu:hover i {
+    transform: rotate(-90deg);
+}

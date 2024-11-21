@@ -1,0 +1,39 @@
+#select:hover{
+    border: solid;
+    border-color: white;
+}
+#menu2:hover{
+    border: solid;
+    border-color: white;
+
+}
+a{
+    text-decoration: none;
+}
+.frame::-webkit-scrollbar {
+    display: none;
+}
+::ng-deep .custom-overlay{
+   
+   margin-left: 500px;
+   margin-top: 55px;
+    
+   
+    
+  }
+  ::ng-deep .location{
+   
+    margin-left: 50px;
+    margin-top: 55px;
+    
+    
+     
+   }
+   ::ng-deep .lang{
+   
+    margin-left: 500px;
+    margin-top: 65px;
+    
+    
+     
+   }

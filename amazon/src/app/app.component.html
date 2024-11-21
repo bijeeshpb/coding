@@ -1,0 +1,15 @@
+<ng-container *ngIf="!fullscreen">
+    <app-header></app-header>
+    
+
+
+<app-sidebar></app-sidebar>
+
+
+
+</ng-container>
+<router-outlet></router-outlet>
+<ng-container *ngIf="!fullscreen">
+    <app-foot></app-foot>
+</ng-container>
+
