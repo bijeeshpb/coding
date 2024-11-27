@@ -1,0 +1,89 @@
+::ng-deep .custom-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  ::ng-deep .mob {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .lap {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .tv {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .audio {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .camera {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .computer {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .smart{
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .music {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .station {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    font-size: small;
+}
+a:hover{
+    color: rgb(205, 159, 34);
+    text-decoration: underline;
+}
+.price:hover{
+    border:2px solid black;
+}
+#option1:hover{
+  background-color: rgb(206, 214, 214);
+  
+}
+.price{
+  font-weight: bolder;
+}
+#margin{
+    border-left: 3px solid rgb(181, 183, 181);
+  height: 1800px;
+  position: absolute;
+  left: 25%;
+  margin-left: 0px;
+  top: 28%;
+}

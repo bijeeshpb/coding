@@ -1,0 +1,115 @@
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="row" style="height: 700px;;">
+    <div class="offcanvas-body ">
+      
+        <div   class="col-md-12 border  p-0 " style="background-color: rgb(55, 57, 57); color:aliceblue; height:95px ; width:auto;"  >
+          <div class="row ">
+            <div class="col-sm-4 " align="center">
+            <!-- profile pic --><img src="\assets\img\profile.png" width="100px">
+
+            </div>
+            <div class="col-sm-7 mt-3" align="left"><h3 class="" style="font-family: Georgia, 'Times New Roman', Times, serif; float:left">hello,sign in your Account</h3></div>
+          </div>
+        
+        <div   class="col-md-12  mt-5  " style="height:50px;"   ><h3 class="mx-5" style="color: black;font-size: large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Trending</h3></div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Best Seller</h6></div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> New Releases</h6></div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Movers and Shakers</h6></div>
+      <hr class="text-secondary">
+
+      <div   class="col-md-12    " style="height:60px;"   ><h3 class="mx-5" style="color: black;font-size: large;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Digital Content and Device</h3></div>
+        <div  id="side" class="col-md-12   " style="height:45px;"   ><h6 class=" mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Amzon MiniTv-FREE entertainment</h6></div>
+       <!-- echo alex  -->
+       <div  id="side" class="col-md-12 text-secondary mt-1"  style="height:45px;  " (click)="showalexa()"  >
+       
+        <h6 class="mx-5 " style="color: black;font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Alexa & Echo<i class="fas fa-caret-down text-secondary mx-3"></i></h6></div>
+          <div class="" *ngIf="displayalexa">
+            <div class="col-sm-2 border  " (click)="close()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+            <app-alexa></app-alexa>
+          </div>
+          
+        <div (click)="openfiretv()" id="side" class="col-md-12  " style="height:45px;"   ><h6 class="mx-5 " style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> 
+          Fire TV <i class="fas fa-caret-down text-secondary mx-2"></i></h6>
+        </div>
+        <div class="" *ngIf="displayfiretv">
+          <div class="col-sm-2 border  " (click)="closefiretv()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+          <app-firetv></app-firetv>
+        </div>
+        <!-- firetv -->
+        <div (click)="openkindle()" id="side" class="col-md-12   " style="height:45px;"   ><h6 class="mx-5" style="color: black; font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> 
+          Kindle E-Reader & eBooks<i class="fas fa-caret-down text-secondary mx-2"></i></h6>
+        </div>
+        <div class="" *ngIf="displaykindle">
+          <div class="col-sm-2 border  " (click)="closekindle()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+          <app-ebook></app-ebook>
+        </div>
+        <div (click)="openaudiobook()" id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black; font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+           Audible Audiobooks <i class="fas fa-caret-down text-secondary mx-2"></i></h6>
+          </div>
+          <div class="" *ngIf="displayaudiobook">
+            <div class="col-sm-2 border  " (click)="closeaudiobook()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+            <app-audiobook></app-audiobook>
+          </div>
+        <div  (click)="openamazonvideo()" id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> 
+          Amazon Prime Video <i class="fas fa-caret-down text-secondary mx-2"></i></h6>
+        </div>
+        <div class="" *ngIf="displayamazonvideo">
+          <div class="col-sm-2 border  " (click)="closeamazonvideo()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+          <app-amazonvideo></app-amazonvideo>
+        </div>
+        <div (click)="openamazonmusic()" id="side" class="col-md-12  " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> 
+          Amazon Prime Music <i class="fas fa-caret-down text-secondary mx-2"></i></h6>
+        </div>
+        <div class="" *ngIf="displayamazonmusic">
+          <div class="col-sm-2 border  " (click)="closeamazonmusic()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+          <app-amazonmusic></app-amazonmusic>
+        </div>
+        <hr class="text-secondary">
+
+        <div   class="col-md-12    " style="height:60px;"   ><h3 class="mx-5" style="color: black;font-size: large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Shop by Category</h3></div>
+        <div (click)="openmobile()" id="side" class="col-md-12  " style="height:45px;"   ><h6 class="mt-3 mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          Mobiles ,Computers<i class="fas fa-caret-down text-secondary mx-3"></i></h6>
+        </div>
+        <div class="" *ngIf="displaymobile">
+          <div class="col-sm-2 border  " (click)="closemobile()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+          <app-mobileoption></app-mobileoption>
+        </div>
+        <div (click)="opentv()"  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> 
+          Tv, Appliance, Electronics<i class="fas fa-caret-down text-secondary mx-1"></i></h6>
+        </div>
+        <div class="" *ngIf="displaytv">
+          <div class="col-sm-2 border  " (click)="closetv()"  style="border-style: solid;" ><i class="fas fa-arrow-circle-up text-secondary">Back</i></div>
+          <app-mobileoption></app-mobileoption>
+        </div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Men's Fashion</h6></div>
+        <div  id="side" class="col-md-12   " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> women's Fashion</h6></div>
+        <hr class="text-secondary">
+
+        <div   class="col-md-12    " style="height:60px;"   ><h3 class="mx-5" style="color: black;font-size: large; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Programs & Features</h3></div>
+        <div  routerLink="./amazonpay" id="side" class="col-md-12   " style="height:45px;"   ><h6 class="mt-3 mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Amazon pay</h6></div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Gift Cards & Mbile Recharges</h6></div>
+        <div  id="side" class="col-md-12   " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Amazon Launchpad</h6></div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Amazon Business</h6></div>
+        <hr class="text-secondary">
+
+        <div   class="col-md-12    " style="height:60px;"   ><h3 class="mx-5" style="color: black;font-size: large;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Help & Settings</h3></div>
+        <div  id="side" class="col-md-12   " style="height:45px;"   ><h6 class="mt-3 mx-5" style="color: black;font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Your Account</h6></div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Customer Service</h6></div>
+        <div  id="side" class="col-md-12    " style="height:45px;"   ><h6 class="mx-5" style="color: black;font-size: medium; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"  routerLink="./login"> Sign in</h6></div>
+
+      </div>
+  </div>
+  
+        
+
+      
+      
+      
+    
+  </div>
+</div>

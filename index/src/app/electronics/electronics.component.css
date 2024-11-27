@@ -1,0 +1,93 @@
+#option1{
+    font-size: 15px;
+  
+    
+}
+#option1:hover{
+     background-color: rgb(206, 214, 214);
+  
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(232, 209, 59);
+}
+#img:hover{
+    border: 2px solid black;
+}
+#img2:hover{
+    border: 2px solid rgb(25, 25, 32);
+    
+}
+#img3:hover{
+    border: 2px solid rgb(219, 140, 12);
+    
+}
+#img2{
+    width:100%
+}
+::ng-deep .custom-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+
+  ::ng-deep .mob {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .lap {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .tv {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .audio {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .camera {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .computer {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .smart{
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .music {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
+  ::ng-deep .station {
+    
+    
+    margin-left: 235px;
+    margin-top:270px ;
+  }
